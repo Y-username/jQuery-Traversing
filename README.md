@@ -1,7 +1,24 @@
-#jQuery
+# jQuery - Traversing Mt. Dom 
+## Traversing Up And Down The DOM Tree
+#### parent()
+$("selector").parent();\
+<small>obtain the direct parent element of a selected element by calling a parent() method.</small>
+#### children()
+$("selector").children("p");\
+<small>The children() function returns all direct child elements of a given element.</small>
 
-## jQuery - Traversing Mt. Dom  
-### Other Traversing Methods
+## Traversing Sideways
+#### next()
+$("selector").next();\
+<small>The next() function traverses along the DOM and returns the next sibling element in the DOM after the selected element.</small>
+#### prev()
+$("selector").prev();\
+<small>traverses backwards along the DOM and returns the previous sibling element in the DOM</small>
+#### toggleClass()
+$("selector").toggleClass("highlight");\
+<small>add "highlight" class as we click on the div and remove it when we click again.</small>
+
+## Other Traversing Methods
 #### first()
 $("selector").first().css("property", "value") \
 <small>The first() function returns the first element in the selected set of elements.</small> \
